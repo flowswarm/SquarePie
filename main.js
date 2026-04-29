@@ -313,6 +313,98 @@ function initSoundToggle() {
   });
 }
 
+/* ===== PERSISTENT VIDEO PLAYBACK ===== */
+function initVideoPersistence() {
+  const allVideos = () => document.querySelectorAll('video');
+
+  // Force-play a single video (swallow browser rejections gracefully)
+  function forcePlay(video) {
+    if (video.paused) {
+      const p = video.play();
+      if (p && typeof p.catch === 'function') {
+        p.catch(() => {
+          // Browser blocked autoplay — mute and retry
+          video.muted = true;
+          video.play().catch(() => {});
+        });
+      }
+    }
+  }
+
+  // Resume ALL videos on the page
+  function resumeAll() {
+    allVideos().forEach(forcePlay);
+  }
+
+  // 1. Page Visibility API — resume when tab regains focus
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      // Small delay lets the browser settle after tab switch
+      setTimeout(resumeAll, 100);
+    }
+  });
+
+  // 2. Window focus — catches alt-tab and returning from other windows
+  window.addEventListener('focus', () => {
+    setTimeout(resumeAll, 100);
+  });
+
+  // 3. Pageshow — fires on back/forward cache navigations (bfcache)
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted) {
+      setTimeout(resumeAll, 200);
+    }
+    resumeAll();
+  });
+
+  // 4. IntersectionObserver — play when scrolled into view, pause when out
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        forcePlay(video);
+      }
+      // Don't pause when out of view — let them keep looping
+    });
+  }, { threshold: 0.1 });
+
+  allVideos().forEach((video) => {
+    // Ensure loop and autoplay attributes are set
+    video.loop = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    videoObserver.observe(video);
+  });
+
+  // 5. Watchdog — periodic check every 3s to catch any stalled videos
+  setInterval(() => {
+    if (document.visibilityState === 'visible') {
+      allVideos().forEach((video) => {
+        // Only force-play videos that are visible in the viewport
+        const rect = video.getBoundingClientRect();
+        const inViewport = rect.bottom > 0 && rect.top < window.innerHeight;
+        if (inViewport && video.paused && video.readyState >= 2) {
+          forcePlay(video);
+        }
+      });
+    }
+  }, 3000);
+
+  // 6. Listen for video 'pause' events and immediately resume
+  allVideos().forEach((video) => {
+    video.addEventListener('pause', () => {
+      // Only auto-resume if user didn't explicitly pause via controls
+      // (our videos don't have controls, so any pause is a browser pause)
+      if (document.visibilityState === 'visible') {
+        setTimeout(() => forcePlay(video), 50);
+      }
+    });
+  });
+
+  // Initial kick — make sure everything is playing on load
+  resumeAll();
+}
+
 /* ===== INIT ALL ===== */
 document.addEventListener('DOMContentLoaded', () => {
   initSplitText();
@@ -326,4 +418,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initProductShowcase();
   initSoundToggle();
+  initVideoPersistence();
 });
