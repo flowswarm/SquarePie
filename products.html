@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos | Don Molinico</title>
+  <meta name="description" content="Descubre nuestra gama de pimientos del piquillo rellenos." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"><div class="cursor__circle"></div><div class="cursor__text"><span class="cursor__label tt-u fs-20"></span></div></div>
+
+  <aside class="menu-overlay" id="menuOverlay">
+    <a href="/" class="menu-overlay__item">Inicio</a>
+    <a href="/products.html" class="menu-overlay__item is-active"><span class="crown">✦</span>Productos<span class="crown">✦</span></a>
+    <a href="/about.html" class="menu-overlay__item">Nuestra Historia</a>
+  </aside>
+
+  <div class="menu-label" id="menuLabel">
+    <div class="menu-label__bg"></div>
+    <button class="menu-label__hamburger" id="hamburgerBtn" aria-label="Menu"><div class="menu-label__line"></div><div class="menu-label__line"></div></button>
+    <a href="/" class="menu-label__logo"><img src="/assets/SPLogo.png" alt="Square Pie" class="menu-label__logo-img" /></a>
+  </div>
+
+  <header class="nav tt-u fs-24 c-secondary">
+    <nav class="nav__items">
+      <a href="/" class="link-hover underline" data-label="Inicio"><span class="link-hover__text">Inicio</span></a>
+      <a href="/products.html" class="link-hover underline" data-label="Productos"><span class="link-hover__text">Productos</span></a>
+    </nav>
+    <nav class="nav__items">
+      <a href="/about.html" class="link-hover underline" data-label="Nuestra Historia"><span class="link-hover__text">Nuestra Historia</span></a>
+      <a href="/contact.html" class="link-hover underline" data-label="Contactico"><span class="link-hover__text">Contactico</span></a>
+    </nav>
+  </header>
+
+  <div id="view">
+    <main>
+      <section class="page-header">
+        <div class="page-header__bg">
+          <img src="https://images.prismic.io/donmolinico/ZibEBvPdc1huKr6i_home-card-vetro.jpg?auto=format,compress" alt="Products" draggable="false" />
+        </div>
+        <h1 class="page-header__title fs-300 tt-u" data-animate="chars">Productos</h1>
+      </section>
+
+      <div class="text-block tt-u sp-160" data-observe>
+        <svg class="text-block__icon sp-14" viewBox="0 0 34 20"><path d="M16.8 0L10.66 10.12L0 6.47L9.71 20H24.29L34 6.47L22.94 10.12L16.8 0Z" fill="currentColor"/></svg>
+        <h2 class="text-block__title sp-40">NUESTROS PIMIENTOS DEL PIQUILLO</h2>
+        <p class="text-block__paragraph ta-c" data-animate="lines">NUESTRA GAMA INCLUYE DIFERENTES FORMATOS Y SABORES. DESDE LOS CLÁSICOS EN FRASCO HASTA LAS PRESENTACIONES MÁS INNOVADORAS. TODOS ELABORADOS CON LA RECETA TRADICIONAL NAVARRA Y LOS MEJORES INGREDIENTES.</p>
+      </div>
+
+      <section class="cards sp-160" data-observe>
+        <div class="cards__inner not-inview" id="cardsInner">
+          <a href="#" class="card card--left" data-cursor-text="Descubre">
+            <img src="https://images.prismic.io/donmolinico/ZibEBvPdc1huKr6i_home-card-vetro.jpg?auto=format,compress" alt="Frasco" draggable="false" />
+          </a>
+          <a href="#" class="card card--center" data-cursor-text="Descubre">
+            <img src="https://images.prismic.io/donmolinico/ZibD_vPdc1huKr6f_home-card-lata.jpg?auto=format,compress" alt="Lata" draggable="false" />
+          </a>
+          <a href="#" class="card card--right" data-cursor-text="Descubre">
+            <img src="https://images.prismic.io/donmolinico/ZibEAvPdc1huKr6g_home-card-pimiento.jpg?auto=format,compress" alt="Pimiento" draggable="false" />
+          </a>
+        </div>
+      </section>
+
+      <div class="product-showcase" id="productShowcase">
+        <div class="product-showcase__type">
+          <div class="product-showcase__type-list ta-r">
+            <button class="is-active" data-type="frasco">FRASCO</button>
+            <button data-type="lata">LATA</button>
+          </div>
+          <div style="flex:1"></div>
+          <div class="product-showcase__type-list">
+            <button data-type="bolsa">BOLSA</button>
+            <button data-type="pandereta">PANDERETA</button>
+          </div>
+        </div>
+        <div class="product-showcase__content">
+          <a href="#" class="product-showcase__medias" data-cursor-text="Descubre">
+            <img id="productImg" src="https://images.prismic.io/donmolinico/Zh1NEzjCgu4jz1D4_Frasco-Carne.png?auto=format,compress" alt="Product" draggable="false" />
+          </a>
+          <div class="product-showcase__title">
+            <div class="fs-340 tt-u ta-c">Pimientos</div>
+            <div class="fs-340 tt-u ta-c">Del Piquillo</div>
+          </div>
+        </div>
+        <div class="product-showcase__flavors">
+          <button class="product-showcase__flavor" data-flavor="salmon">SALMON</button>
+          <button class="product-showcase__flavor" data-flavor="atun">ATUN</button>
+          <button class="product-showcase__flavor" data-flavor="quinoa">QUINOA</button>
+          <button class="product-showcase__flavor is-active" data-flavor="carne">CARNE</button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__hashtags sp-60"><div class="fs-110 c-accent ta-c tt-u">#DONMOLINICO</div></div>
+        <div class="footer__copyright c-accent tt-u fs-20">© copyright 2026 grupo Viru S.A. Todos los derechos reservados.</div>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

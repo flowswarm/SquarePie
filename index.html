@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQUARE PIE | Brooklyn Born, Philly Perfected</title>
+  <meta name="description" content="Small batch. Long fermentation. Brooklyn-style thick crust pizza at 801 East Passyunk Avenue, Philadelphia." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- INTRO LOADING -->
+  <div class="intro" id="intro">
+    <div class="intro__logo">
+      <img src="/assets/SPLogo.png" alt="Square Pie" class="intro__logo-img" />
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor">
+    <div class="cursor__circle"></div>
+    <div class="cursor__text"><span class="cursor__label tt-u fs-20"></span></div>
+  </div>
+
+  <!-- FULLSCREEN MENU -->
+  <aside class="menu-overlay" id="menuOverlay">
+    <a href="/" class="menu-overlay__item is-active">
+      <span class="crown">✦</span>Home<span class="crown">✦</span>
+    </a>
+    <a href="/menu.html" class="menu-overlay__item">Menu</a>
+    <a href="/about.html" class="menu-overlay__item">About</a>
+    <a href="/photos.html" class="menu-overlay__item">Photos</a>
+  </aside>
+
+  <!-- CENTER LOGO BAR -->
+  <div class="menu-label" id="menuLabel">
+    <div class="menu-label__bg"></div>
+    <button class="menu-label__hamburger" id="hamburgerBtn" aria-label="Menu">
+      <div class="menu-label__line"></div>
+      <div class="menu-label__line"></div>
+    </button>
+    <a href="/" class="menu-label__logo" aria-label="Homepage">
+      <img src="/assets/SPLogo.png" alt="Square Pie" class="menu-label__logo-img" />
+    </a>
+  </div>
+
+  <!-- HEADER NAV -->
+  <header class="nav tt-u fs-24 c-secondary">
+    <nav class="nav__items">
+      <a href="/" class="link-hover underline" data-label="Home"><span class="link-hover__text">Home</span></a>
+      <a href="/menu.html" class="link-hover underline" data-label="Menu"><span class="link-hover__text">Menu</span></a>
+    </nav>
+    <nav class="nav__items">
+      <a href="/about.html" class="link-hover underline" data-label="About"><span class="link-hover__text">About</span></a>
+      <a href="/photos.html" class="link-hover underline" data-label="Photos"><span class="link-hover__text">Photos</span></a>
+    </nav>
+  </header>
+
+  <div id="view">
+    <main class="home">
+
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero__media">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/73d0b633-16c1-450c-8525-a04f0a6e5018/DSC00007.jpeg?format=2500w" alt="Square Pie restaurant exterior" draggable="false" id="heroImg" />
+        </div>
+        <div class="hero__content">
+          <h1 class="ta-c" aria-label="Small Batch Long Fermentation">
+            <div class="hero__title-line">
+              <span class="sup c-text-alt tt-u" style="text-align:right">SMALL<br>BATCH</span>
+              <span class="hero__title-main" data-animate="chars" data-delay="0">SQUARE</span>
+              <span class="sup c-text-alt tt-u">LONG<br>FERMENTATION</span>
+            </div>
+            <div class="hero__title-line">
+              <span class="hero__title-main" data-animate="chars" data-delay="0.1">PIE</span>
+            </div>
+            <div class="hero__title-line">
+              <span class="hero__title-main fs-110" data-animate="chars" data-delay="0.2" style="font-size:clamp(1.2rem,3vw,3rem); letter-spacing:0.15em">PHILLY</span>
+            </div>
+          </h1>
+        </div>
+      </section>
+
+      <!-- TEXT BLOCK: ABOUT SQUARE PIE -->
+      <div class="text-block tt-u sp-200" data-observe style="padding-top:80px;">
+        <svg class="text-block__icon sp-14" viewBox="0 0 34 20" fill="none"><path d="M16.8 0L10.66 10.12L0 6.47L9.71 20H24.29L34 6.47L22.94 10.12L16.8 0Z" fill="currentColor"/></svg>
+        <h3 class="text-block__title sp-40">BROOKLYN BORN, PHILLY PERFECTED</h3>
+        <p class="text-block__paragraph ta-c" data-animate="lines">SQUARE PIE TAKES CLASSIC BROOKLYN-STYLE SICILIAN PIZZA AND TOPS IT WITH GOURMET TOUCHES LIKE HOUSE-CURED SAUSAGES AND BERKSHIRE PORK. SMALL BATCH DOUGH WITH LONG FERMENTATION FOR THE PERFECT THICK CRUST, EVERY SINGLE TIME.</p>
+      </div>
+
+      <!-- PRODUCT CARDS -->
+      <section class="cards sp-160" data-observe>
+        <div class="cards__inner not-inview" id="cardsInner">
+          <a href="/menu.html" class="card card--left" data-cursor-text="View Menu">
+            <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1414334464649-IVOBTZVA0GIP86TW9BK7/Porchetta.JPG?format=1500w" alt="Porchetta Pie" draggable="false" />
+          </a>
+          <a href="/menu.html" class="card card--center" data-cursor-text="View Menu">
+            <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1517154799694-8T8BJSW5779917L62OQW/Pepperoni.JPG?format=1500w" alt="Pepperoni Pie" draggable="false" />
+          </a>
+          <a href="/menu.html" class="card card--right" data-cursor-text="View Menu">
+            <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1694033272227-JEB5GQN3S0UVH614DEEF/DSC09995.jpeg?format=1500w" alt="Square Pie interior" draggable="false" />
+          </a>
+        </div>
+      </section>
+
+      <!-- LARGE TITLE: THICK CRUST -->
+      <div class="title-large sp-40" data-observe>
+        <div class="hero__title-line">
+          <span class="sup c-secondary tt-u fs-35" style="text-align:right">SMALL<br>BATCH</span>
+          <span class="fs-260 c-secondary tt-u" data-animate="chars" data-delay="0">THICK</span>
+          <span class="sup c-secondary tt-u fs-35">LONG<br>FERMENTATION</span>
+        </div>
+        <div class="ta-c"><span class="fs-260 c-secondary tt-u" data-animate="chars" data-delay="0.1">CRUST</span></div>
+        <div class="ta-c"><span class="fs-260 c-secondary tt-u" data-animate="chars" data-delay="0.2">BROOKLYN</span></div>
+        <div class="ta-c"><span class="fs-260 c-secondary tt-u" data-animate="chars" data-delay="0.3">STYLE</span></div>
+      </div>
+
+      <!-- TEXT BLOCK 2 + CTA -->
+      <div class="text-block tt-u sp-160" data-observe>
+        <svg class="text-block__icon sp-40" viewBox="0 0 34 20" fill="none"><path d="M16.8 0L10.66 10.12L0 6.47L9.71 20H24.29L34 6.47L22.94 10.12L16.8 0Z" fill="currentColor"/></svg>
+        <p class="text-block__paragraph ta-c" data-animate="lines">VISIT US AT 801 EAST PASSYUNK AVENUE IN THE HEART OF SOUTH PHILLY. DINE IN, BYOB, OR ORDER DELIVERY VIA SLICE AND UBEREATS. NOW OPEN FOR LUNCH!</p>
+      </div>
+
+      <section class="tasting sp-160">
+        <a href="/menu.html" class="tasting__link" data-animate="chars">View our menu</a>
+        <a href="https://slicelife.com/restaurants/pa/philadelphia/19147/square-pie/menu" target="_blank" class="tasting__link" data-animate="chars">Order Delivery</a>
+      </section>
+
+      <!-- VIDEO: THE BEST PIZZA IN PHILADELPHIA -->
+      <section class="video-hero" data-observe>
+        <div class="video-hero__wrapper">
+          <video class="video-hero__video site-video" src="/assets/videos/reel5_best_pizza.mp4" muted loop playsinline autoplay></video>
+          <button class="video-sound-toggle" aria-label="Toggle sound">
+            <svg class="sound-off" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+            <svg class="sound-on" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+          </button>
+        </div>
+        <div class="video-hero__overlay">
+          <p class="video-hero__caption">The Best Pizza in Philadelphia — Small-batch dough with long fermentation, Brooklyn-style thick crust perfected in Philly</p>
+          <span class="video-hero__tag">@darthefoodguru</span>
+        </div>
+      </section>
+
+      <!-- STICKY SECTION -->
+      <section class="sticky-section" id="stickySection">
+        <div class="sticky-section__text">
+          <div class="c-text-alt ta-c fs-110 tt-u" data-animate="lines">OPEN<br>DAILY</div>
+          <svg class="sticky-section__seal" viewBox="0 0 94 127" fill="none">
+            <path d="M60.8 39.83L80.11 12.85L58.9 20.13L46.72 0L34.54 20.13L13.33 12.85L32.65 39.83H60.8Z" fill="currentColor"/>
+            <path d="M46.72 59.52L32.64 39.84H9V126.28H28.59V61.65L46.72 87L64.85 61.65V126.28H84.44V39.84H60.8L46.72 59.52Z" fill="currentColor"/>
+          </svg>
+          <div class="c-text-alt ta-c fs-110 tt-u" data-animate="lines">DINE&nbsp;IN<br>&amp;&nbsp;BYOB</div>
+        </div>
+        <div class="sticky-section__media">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1517154841155-VUW4P5M9VGT5JYGB658N/Porchetta.JPG?format=2500w" alt="Porchetta pizza close-up" draggable="false" />
+        </div>
+      </section>
+
+      <!-- PRODUCT SHOWCASE -->
+      <div class="product-showcase" id="productShowcase">
+        <div class="product-showcase__type">
+          <div class="product-showcase__type-list ta-r">
+            <button class="is-active" data-type="classic">CLASSIC</button>
+            <button data-type="specialty">SPECIALTY</button>
+          </div>
+          <div style="flex:1"></div>
+          <div class="product-showcase__type-list">
+            <button data-type="appetizers">APPETIZERS</button>
+            <button data-type="salads">SALADS</button>
+          </div>
+        </div>
+        <div class="product-showcase__content">
+          <a href="/menu.html" class="product-showcase__medias" data-cursor-text="View Menu">
+            <img id="productImg" src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1628001513602-VZPKBFVE9TNF47DD3NP4/image-asset.jpeg?format=1500w" alt="Pizza" draggable="false" />
+          </a>
+          <div class="product-showcase__title">
+            <div class="fs-340 tt-u ta-c" data-animate="lines">Square</div>
+            <div class="fs-340 tt-u ta-c" data-animate="lines">Pizza</div>
+          </div>
+        </div>
+        <div class="product-showcase__flavors">
+          <button class="product-showcase__flavor" data-flavor="red">RED PIE</button>
+          <button class="product-showcase__flavor" data-flavor="white">WHITE PIE</button>
+          <button class="product-showcase__flavor is-active" data-flavor="pepperoni">PEPPERONI</button>
+          <button class="product-showcase__flavor" data-flavor="porchetta">PORCHETTA</button>
+        </div>
+      </div>
+
+      <!-- VIDEO: PLACES I SHOULD GATEKEEP -->
+      <section class="video-full" data-observe>
+        <div class="video-hero__wrapper">
+          <video class="site-video" src="/assets/videos/reel3_gatekeep.mp4" muted loop playsinline autoplay></video>
+          <button class="video-sound-toggle" aria-label="Toggle sound">
+            <svg class="sound-off" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+            <svg class="sound-on" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+          </button>
+        </div>
+        <div class="video-full__caption">
+          <p class="video-full__text">"I've been talking about Square Pie for quite some time now. They are still so under the radar."</p>
+          <span class="video-full__tag">Places in Philly I Should Gatekeep</span>
+        </div>
+      </section>
+
+      <!-- HOURS SECTION -->
+      <section class="award" data-observe>
+        <h2 class="c-accent ta-c tt-u fs-90 sp-60" data-animate="lines">Now Open for Lunch!</h2>
+        <div class="award__badge sp-60" style="max-width:600px; margin:0 auto;">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/e5e12da3-ad60-4700-888d-6d156f896d14/DSC09983.jpeg?format=1500w" alt="Square Pie interior" draggable="false" style="border-radius:8px;" />
+        </div>
+        <div class="award__description c-accent ta-c tt-u sp-40" style="max-width:500px; margin:0 auto;">
+          <p class="sp-14">OPEN FOR DINE IN — BYOB</p>
+          <p class="sp-14">MONDAY–THURSDAY: 12–2 &amp; 4–9</p>
+          <p class="sp-14">FRIDAY–SATURDAY: 12–9</p>
+          <p class="sp-14">SUNDAY: 12–8</p>
+          <p class="sp-40" style="font-size:1.2em; margin-top:20px;">215.238.0615</p>
+          <p style="font-style:italic; text-transform:none; opacity:0.7;">Delivery available via Slice or UberEats</p>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__social sp-40 c-secondary tt-u fs-24">
+          <a href="https://www.instagram.com/squarepiephilly/" target="_blank" class="link-hover underline" data-label="Instagram"><span class="link-hover__text">Instagram</span></a>
+          <a href="mailto:squarepiephilly@gmail.com" class="link-hover underline" data-label="Email"><span class="link-hover__text">Email</span></a>
+          <a href="https://slicelife.com/restaurants/pa/philadelphia/19147/square-pie/menu" target="_blank" class="link-hover underline" data-label="Order Online"><span class="link-hover__text">Order Online</span></a>
+        </div>
+        <div class="footer__hashtags sp-60">
+          <div class="fs-110 c-accent ta-c tt-u">#SQUAREPIE</div>
+          <div class="fs-110 c-accent ta-c tt-u sp-40">#PHILLYPIZZA</div>
+        </div>
+        <div class="footer__info c-accent tt-u fs-24 sp-40">
+          <p>801 East Passyunk Avenue</p>
+          <p>Philadelphia, PA 19147</p>
+        </div>
+        <div class="footer__nav sp-60 c-secondary tt-u fs-24">
+          <a href="/menu.html" class="link-hover underline" data-label="Menu"><span class="link-hover__text">Menu</span></a>
+          <a href="/about.html" class="link-hover underline" data-label="About"><span class="link-hover__text">About</span></a>
+          <a href="/photos.html" class="link-hover underline" data-label="Photos"><span class="link-hover__text">Photos</span></a>
+          <a href="/" class="link-hover underline" data-label="Home"><span class="link-hover__text">Home</span></a>
+        </div>
+        <div class="footer__copyright c-accent tt-u fs-20">© 2026 Square Pie Philly. All rights reserved. <a href="/admin.html" class="footer__admin-link" title="Admin Portal"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></a></div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photos | Square Pie</title>
+  <meta name="description" content="Photos from Square Pie — Brooklyn-style thick crust pizza in Philly." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"><div class="cursor__circle"></div><div class="cursor__text"><span class="cursor__label tt-u fs-20"></span></div></div>
+
+  <aside class="menu-overlay" id="menuOverlay">
+    <a href="/" class="menu-overlay__item">Home</a>
+    <a href="/menu.html" class="menu-overlay__item">Menu</a>
+    <a href="/about.html" class="menu-overlay__item">About</a>
+    <a href="/photos.html" class="menu-overlay__item is-active"><span class="crown">✦</span>Photos<span class="crown">✦</span></a>
+  </aside>
+
+  <div class="menu-label" id="menuLabel">
+    <div class="menu-label__bg"></div>
+    <button class="menu-label__hamburger" id="hamburgerBtn" aria-label="Menu"><div class="menu-label__line"></div><div class="menu-label__line"></div></button>
+    <a href="/" class="menu-label__logo"><img src="/assets/SPLogo.png" alt="Square Pie" class="menu-label__logo-img" /></a>
+  </div>
+
+  <header class="nav tt-u fs-24 c-secondary">
+    <nav class="nav__items">
+      <a href="/" class="link-hover underline" data-label="Home"><span class="link-hover__text">Home</span></a>
+      <a href="/menu.html" class="link-hover underline" data-label="Menu"><span class="link-hover__text">Menu</span></a>
+    </nav>
+    <nav class="nav__items">
+      <a href="/about.html" class="link-hover underline" data-label="About"><span class="link-hover__text">About</span></a>
+      <a href="/photos.html" class="link-hover underline" data-label="Photos"><span class="link-hover__text">Photos</span></a>
+    </nav>
+  </header>
+
+  <div id="view">
+    <main>
+      <section class="page-header" style="background: var(--c-primary);">
+        <h1 class="page-header__title fs-300 tt-u c-secondary" data-animate="chars">Photos</h1>
+      </section>
+
+      <div class="text-block tt-u sp-60" data-observe style="padding-top:60px;">
+        <svg class="text-block__icon sp-14" viewBox="0 0 34 20"><path d="M16.8 0L10.66 10.12L0 6.47L9.71 20H24.29L34 6.47L22.94 10.12L16.8 0Z" fill="currentColor"/></svg>
+        <h2 class="text-block__title sp-40" style="color: var(--c-dark);">FROM OUR KITCHEN</h2>
+      </div>
+
+      <section class="photo-grid sp-160" data-observe>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1414334464649-IVOBTZVA0GIP86TW9BK7/Porchetta.JPG?format=1500w" alt="Porchetta Pie" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>Porchetta Pie</strong>
+            <span>Roast pork, garlic, sauteed spinach, provolone, cream</span>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1517154799694-8T8BJSW5779917L62OQW/Pepperoni.JPG?format=1500w" alt="Pepperoni" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>Pepperoni</strong>
+            <span>Classic cup pepperoni on thick Brooklyn crust</span>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1517154841155-VUW4P5M9VGT5JYGB658N/Porchetta.JPG?format=1500w" alt="Porchetta close-up" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>Porchetta</strong>
+            <span>Roast pork, garlic, sauteed spinach, provolone, cream</span>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1628001513602-VZPKBFVE9TNF47DD3NP4/image-asset.jpeg?format=1500w" alt="Pizza slice" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>Fresh from the oven</strong>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1694033272227-JEB5GQN3S0UVH614DEEF/DSC09995.jpeg?format=1500w" alt="Interior" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>Our Space</strong>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1694033272213-RRGAS79AVIRTXEVCYMSV/DSC09985.jpeg?format=1500w" alt="Interior details" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>801 E Passyunk</strong>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1694033290413-H0O87PK2A2L6004IGWI1/DSC09997.jpeg?format=1500w" alt="Restaurant atmosphere" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>BYOB Vibes</strong>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1694033302163-S0A1LCDLN80SXU2LR2ZQ/DSC00003.jpeg?format=1500w" alt="Food preparation" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>Crafted with care</strong>
+          </div>
+        </div>
+        <div class="photo-grid__item" data-cursor-text="View">
+          <img src="https://images.squarespace-cdn.com/content/v1/54367345e4b0d3ba65ebc2ed/1694033302159-GAQTBBUJQJV7QJH853LQ/DSC00002.jpeg?format=1500w" alt="Square Pie details" draggable="false" />
+          <div class="photo-grid__caption">
+            <strong>The details</strong>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__hashtags sp-60"><div class="fs-110 c-accent ta-c tt-u">#SQUAREPIE</div></div>
+        <div class="footer__info c-accent tt-u fs-24 sp-40">
+          <p>801 East Passyunk Avenue • Philadelphia, PA 19147</p>
+          <p>215.238.0615</p>
+        </div>
+        <div class="footer__copyright c-accent tt-u fs-20">© 2026 Square Pie Philly. All rights reserved. <a href="/admin.html" class="footer__admin-link" title="Admin Portal"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></a></div>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
